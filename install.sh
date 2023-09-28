@@ -57,6 +57,6 @@ systemctl start tomcat
 systemctl enable tomcat
 
 echo " username and password manager hast va baraye admin : admin:admin" 
-clear
+
 echo " tomcat installed ...."
 
