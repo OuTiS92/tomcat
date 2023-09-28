@@ -5,7 +5,7 @@ clear
 # ==============================
 echo "welcome to install tomcat webserver ..."
 sleep 2
-apt update
+apt update -y 
 wait
 
 
