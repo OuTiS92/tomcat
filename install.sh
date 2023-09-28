@@ -7,6 +7,7 @@ clear
 sleep 2
 apt update
 wait
+sudo useradd -m -d /opt/tomcat -U -s /bin/false tomcat
 apt install default-jdk
 wait
 cd /tmp
