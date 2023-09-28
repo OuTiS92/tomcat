@@ -12,7 +12,7 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 apt install default-jdk
 wait
 cd /tmp
-wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13-fulldocs.tar.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13.tar.gz
 mkdir /opt/tomcat
 wait
  tar -xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
