@@ -7,7 +7,8 @@ clear
 sleep 2
 apt update
 wait
-sudo useradd -m -d /opt/tomcat -U -s /bin/false tomcat
+sudo groupadd tomcat
+sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 apt install default-jdk
 wait
 cd /tmp
@@ -16,11 +17,9 @@ mkdir /opt/tomcat
 wait
  tar -xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
 wait
-chown -R tomcat:tomcat /opt/tomcat/
+sudo chgrp -R tomcat /opt/tomcat
+sudo chmod -R g+r /opt/tomcat/conf
 wait
-chmod -R u+x /opt/tomcat/bin
-wait
-
 mv /opt/tomcat/conf/tomcat-users.xml /opt/tomcat/conf/tomcat-users.xmlold
 touch /opt/tomcat/conf/tomcat-users.xml
 echo -n "<role rolename="manager-gui" />
