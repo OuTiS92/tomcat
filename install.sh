@@ -36,7 +36,6 @@ clear
 # new version for insert 
 cat  tomcat-users.xml >> /opt/tomcat/conf/tomcat-users.xml
 
-
 # and more services tomcat
 
 #echo -n "{<?xml version="1.0" encoding="UTF-8"?>
