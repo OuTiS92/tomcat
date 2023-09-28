@@ -55,9 +55,9 @@ ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
 sleep 2 
 clear
 
-echo "\n\n\n\n\nusername and password manager hast va baraye admin : admin:admin\n\nwrite  tomcatup ===> start webserver tomcat up ...\n\n write  tomcatdown ===> down webserver tomcat down ...\n\n\n\n"
+echo -e "\n\n\n\n\nusername and password manager hast va baraye admin : admin:admin\n\nwrite  tomcatup ===> start webserver tomcat up ...\n\nwrite tomcatdown ===> down webserver tomcat down ...\n\n\n\n"
 
-sleep 2 
+sleep 5
 clear
 echo " Tomcat Installed ...."
 
