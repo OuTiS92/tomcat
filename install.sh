@@ -1,20 +1,19 @@
 #!/bin/bash
 
-
+clear
 # Tomcat installation on Ubuntu: 
 # ==============================
-
-
 echo "welcome to install tomcat webserver ..."
-
-clear
 sleep 2
 apt update
 wait
 
+
 # Install OpenJDK
 apt install default-jdk
 wait
+
+# mkdir directory tomcat and downlaod file for install ...
 cd /tmp
 wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.13/bin/apache-tomcat-10.1.13.tar.gz
 mkdir /opt/tomcat
@@ -25,8 +24,7 @@ chmod +x /opt/tomcat/bin/startup.sh
 sudo ./startup.sh
 clear
 sleep 2
-echo "install tomcat on port 8080 ...." 
-wait
+echo "install tomcat on port 8080 .... " 
 sleep 2 
 clear
 
@@ -67,6 +65,8 @@ echo -n "<?xml version="1.0" encoding="UTF-8"?>
 " > /opt/tomcat/webapps/manager/META-INF/context.xml 
 
 
+
+
 echo -n " 
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
@@ -95,14 +95,19 @@ echo -n "
 " > /opt/tomcat/webapps/host-manager/META-INF/context.xml 
 
 
+# link for up and down webserver tomcat ...
+ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup
+ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
+sleep 2 
+clear
 
+echo "\n\n\n\n\nusername and password manager hast va baraye admin : admin:admin\n\nwrite  tomcatup ===> start webserver tomcat up ...\n\n write  tomcatdown ===> down webserver tomcat down ...\n\n\n\n"
 
-sleep 2
-sudo systemctl daemon-reload
-systemctl start tomcat
-systemctl enable tomcat
+sleep 2 
+clear
+echo " Tomcat Installed ...."
 
-echo " username and password manager hast va baraye admin : admin:admin" 
+sleep 2 
+clear
 
-echo " tomcat installed ...."
 
