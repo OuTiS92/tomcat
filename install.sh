@@ -20,7 +20,8 @@ wait
 chmod -R u+x /opt/tomcat/bin
 wait
 
-rm -rf /opt/tomcat/conf/tomcat-users.xml
+mv /opt/tomcat/conf/tomcat-users.xml /opt/tomcat/conf/tomcat-users.xmlold
+touch /opt/tomcat/conf/tomcat-users.xml
 echo -n "<role rolename="manager-gui" />
 <user username="manager" password="manager" roles="manager-gui" />
 <role rolename="admin-gui" />
