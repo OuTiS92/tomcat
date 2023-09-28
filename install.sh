@@ -19,6 +19,13 @@ wait
 chmod -R u+x /opt/tomcat/bin
 wait
 
+rm -rf /opt/tomcat/conf/tomcat-users.xml
+echo -n "
+<role rolename="manager-gui" />
+<user username="manager" password="manager" roles="manager-gui" />
+
+<role rolename="admin-gui" />
+<user username="admin" password="admin" roles="manager-gui,admin-gui" />" > /opt/tomcat/conf/tomcat-users.xml 
 sleep 2
 clear
 echo " tomcat installed ...."
