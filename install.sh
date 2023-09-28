@@ -10,7 +10,7 @@ wait
 
 
 # Install OpenJDK
-apt install default-jdk
+apt install default-jdk -y 
 wait
 
 # mkdir directory tomcat and downlaod file for install ...
