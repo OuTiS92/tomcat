@@ -1,14 +1,18 @@
 #!/bin/bash
 
 
+# Tomcat installation on Ubuntu: 
+# ==============================
+
+
 echo "welcome to install tomcat webserver ..."
 
 clear
 sleep 2
 apt update
 wait
-sudo groupadd tomcat
-sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+
+# Install OpenJDK
 apt install default-jdk
 wait
 cd /tmp
@@ -17,12 +21,16 @@ mkdir /opt/tomcat
 wait
  tar -xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
 wait
-sudo chgrp -R tomcat /opt/tomcat
-chmod a+rx /opt /opt/tomcat/ /opt/tomcat/bin
-sudo chmod -R g+r /opt/tomcat/conf
+chmod +x /opt/tomcat/bin/startup.sh
+sudo ./startup.sh
+clear
+sleep 2
+echo "install tomcat on port 8080 ...." 
 wait
-mv /opt/tomcat/conf/tomcat-users.xml /opt/tomcat/conf/tomcat-users.xmlold
-touch /opt/tomcat/conf/tomcat-users.xml
+sleep 2 
+clear
+
+# and more user and password ...
 echo -n "<role rolename="manager-gui" />
 <user username="manager" password="manager" roles="manager-gui" />
 <role rolename="admin-gui" />
