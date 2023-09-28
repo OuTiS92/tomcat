@@ -18,6 +18,7 @@ wait
  tar -xzvf apache-tomcat-10*tar.gz -C /opt/tomcat --strip-components=1
 wait
 sudo chgrp -R tomcat /opt/tomcat
+chmod a+rx /opt /opt/tomcat/ /opt/tomcat/bin
 sudo chmod -R g+r /opt/tomcat/conf
 wait
 mv /opt/tomcat/conf/tomcat-users.xml /opt/tomcat/conf/tomcat-users.xmlold
