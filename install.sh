@@ -53,15 +53,10 @@ cat context.xml >   /opt/tomcat/webapps/host-manager/META-INF/context.xml
 ln -s /opt/tomcat/bin/startup.sh /usr/local/bin/tomcatup
 ln -s /opt/tomcat/bin/shutdown.sh /usr/local/bin/tomcatdown
 sleep 2 
-clear
-
+echo -e "\n\n\n\n Tomcat Installed ....\n\n\n\n"
 echo -e "\n\n\n\n\nusername and password manager hast va baraye admin : admin:admin\n\nwrite  tomcatup ===> start webserver tomcat up ...\n\nwrite tomcatdown ===> down webserver tomcat down ...\n\n\n\n"
 
-sleep 5
-clear
-echo " Tomcat Installed ...."
-
 sleep 2 
-clear
+
 
 
