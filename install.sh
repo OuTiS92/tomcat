@@ -6,12 +6,9 @@ clear
 echo "welcome to install tomcat webserver ..."
 sleep 2
 apt update -y 
-wait
-
 
 # Install OpenJDK
 apt install default-jdk -y 
-wait
 
 # mkdir directory tomcat and downlaod file for install ...
 cd /tmp
