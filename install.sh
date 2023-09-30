@@ -33,7 +33,7 @@ clear
 # new version for insert 
 cat  tomcat-users.xml >> /opt/tomcat/conf/tomcat-users.xml
 
-# and more services tomcat
+# and more services tomcat ( dasorty ke nemikhaid az file estefade konid
 
 #echo -n "{<?xml version="1.0" encoding="UTF-8"?>
 #<Context antiResourceLocking="false" privileged="true" >
