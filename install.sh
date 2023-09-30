@@ -55,5 +55,7 @@ echo -e "\n\n\n\n\nusername and password manager hast va baraye admin : admin:ad
 
 sleep 2 
 
+clear 
+
 
 
