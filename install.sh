@@ -53,7 +53,7 @@ sleep 2
 echo -e "\n\n\n\n Tomcat Installed ....\n\n\n\n"
 echo -e "\n\n\n\n\nusername and password manager hast va baraye admin : admin:admin\n\nwrite  tomcatup ===> start webserver tomcat up ...\n\nwrite tomcatdown ===> down webserver tomcat down ...\n\n\n\n"
 
-sleep 2 
+sleep 5
 
 clear 
 
