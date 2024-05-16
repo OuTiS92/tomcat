@@ -24,7 +24,6 @@ sleep 2
 echo "install tomcat on port 8080 .... " 
 sleep 2 
 clear
-
 # and more user and password ...
 #echo -n "<role rolename="manager-gui" />
 #<user username="manager" password="manager" roles="manager-gui" />
@@ -54,7 +53,6 @@ echo -e "\n\n\n\n Tomcat Installed ....\n\n\n\n"
 echo -e "\n\n\n\n\nusername and password manager hast va baraye admin : admin:admin\n\nwrite  tomcatup ===> start webserver tomcat up ...\n\nwrite tomcatdown ===> down webserver tomcat down ...\n\n\n\n"
 
 sleep 5
-
 clear 
 
 
